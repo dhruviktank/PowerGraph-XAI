@@ -548,6 +548,8 @@ class Explain(object):
                 list_idx, size=size, replace=False
             )
         print("Number of explained entities: ", len(explained_y))
+        del logits
+        torch.cuda.empty_cache()
         return explained_y
 
     def save_mask(self, explained_y, edge_masks, node_feat_masks, computation_time):
