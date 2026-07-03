@@ -17,7 +17,7 @@ from torch_geometric.data import Data
 import numpy as np
 from utils.gen_utils import from_edge_index_to_adj, padded_datalist
 
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
 
 
 def index_edgeorder(edge_order):
