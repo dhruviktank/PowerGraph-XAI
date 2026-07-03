@@ -366,7 +366,7 @@ class TrainModel(object):
 #  Main train function
 def train_gnn(args, args_group):
     fix_random_seed(args.seed)
-    device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     dataset_params = args_group["dataset_params"]
     model_params = args_group["model_params"]
