@@ -3,7 +3,7 @@
 import os
 
 # CKPT_ROOT = "C:/Users/avarbella/Documents/GraphGym-master/powergrid_datasets/"
-CKPT_ROOT = "/cluster/work/zhang/kamara/powergraph_storage/"
+CKPT_ROOT = "/kaggle/working/PowerGraph-XAI/kamara/powergraph_storage/"
 
 DATA_DIR = CKPT_ROOT + "dataset/"
 MODEL_DIR = CKPT_ROOT + "model/"
