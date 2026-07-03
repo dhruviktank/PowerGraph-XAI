@@ -232,7 +232,7 @@ def arg_parse():
         "--explained_target",
         help="the class you only want to explain; None otherwise",
         type=int,
-        default=None,
+        default=0,
     )
     parser_explainer_params.add_argument(
         "--num_explained_y",
